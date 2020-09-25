@@ -21,4 +21,5 @@ else:
 if int(sec)<0:
     sec=0
 print(int(day),"days",int(hour),"hours",int(min),"minutes",int(sec),"seconds")
+#I think they wanted me to use "elif" to get to the wanted output.
 
