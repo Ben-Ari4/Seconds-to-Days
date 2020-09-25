@@ -1,0 +1,24 @@
+#The program shows the amount of days, hours, and minutes according to the number of seconds.
+n=input("please enter a number of seconds here:")
+sec=int(n)
+day=sec/(24*60*60)
+if int(day)>=1:
+    sec=sec-(int(day)*60*60*24)
+    hour=sec/(60*60)
+else:
+    day=0
+    hour=sec/(60*60)
+if int(hour)>=1:
+    sec=sec-(int(hour)*60*60)
+    min=sec/60
+else:
+    hour=0
+    min=sec/60
+if int(min)>=1:
+    sec=sec-int(min)*60
+else:
+    min=0
+if int(sec)<0:
+    sec=0
+print(int(day),"days",int(hour),"hours",int(min),"minutes",int(sec),"seconds")
+
